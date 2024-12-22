@@ -1,7 +1,7 @@
-import * as apiModel from '../../../../master-frontend-lemoncode/05-testing/00-boilerplate/src/pods/project/api/project.api-model';
-import * as viewModel from '../../../../master-frontend-lemoncode/05-testing/00-boilerplate/src/pods/project/project.vm';
-import * as mapper from '../../../../master-frontend-lemoncode/05-testing/00-boilerplate/src/pods/project/project.mapper';
-import * as projectVm from '../../../../master-frontend-lemoncode/05-testing/00-boilerplate/src/pods/project/project.vm';
+import * as apiModel from './api/project.api-model';
+import * as viewModel from './project.vm';
+import * as mapper from './project.mapper';
+import * as projectVm from './project.vm';
 
 describe('mapEmployeeSummaryFromApiToVm', () => {
   let input: apiModel.EmployeeSummary;
