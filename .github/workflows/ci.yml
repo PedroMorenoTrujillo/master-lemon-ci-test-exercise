@@ -56,7 +56,7 @@ jobs:
         run: npx wait-on http://localhost:5173
 
       - name: Run Cypress tests
-        run: npm run test:e2e
+        run: npm run start:e2e:ci
 
   build:
     runs-on: ubuntu-latest
