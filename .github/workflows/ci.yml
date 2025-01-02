@@ -60,7 +60,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    needs: test # Solo se ejecuta si el job "test" tiene éxito
+    needs: [test, e2e] # Solo se ejecuta si los jobs "test" y "e2e" tienen éxito
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
