@@ -59,7 +59,11 @@ jobs:
         run: npm run start:e2e:ci
 
       - name: Stop application
-        run: kill $(jobs -p)
+        run: |
+          PID=$(lsof -t -i:5173)
+          if [ -n "$PID" ]; then
+            kill -9 $PID
+          fi
 
   build:
     runs-on: ubuntu-latest
